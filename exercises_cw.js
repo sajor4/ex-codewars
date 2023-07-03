@@ -148,3 +148,44 @@ function pointsOfSeason(array) {
   }
 
 console.log(pointsOfSeason(resultsOfSeason))
+
+
+
+// es----------------------------------------
+
+function betterThanAverage(classPoints, yourPoints) {
+  for (let i = 0; i < classPoints.length; i++) {
+    const element = classPoints[i];
+    const myPoint = yourPoints[0];
+    
+    if (element >= myPoint) {
+      return false;
+    }
+      
+   
+  }
+  return true;
+}
+
+  console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9));
+
+  //------------------------------------------------------------
+
+
+  const testArray = ['qui', 'quo', 'qua']
+
+  function reverseArray(arr) {
+    
+    const tempArray = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      const element = arr[i];
+      tempArray.push(element);
+      
+    }
+
+    return tempArray;
+
+  }
+  const newArray = reverseArray(testArray);  
+  console.log(newArray)
